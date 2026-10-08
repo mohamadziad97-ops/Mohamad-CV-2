@@ -1,0 +1,16 @@
+# Secrets — never upload your Gmail App Password
+config/smtp.php
+
+# Contact-form messages and rate-limit data (private)
+storage/
+
+# Local test / helper files
+test-email.php
+smtpcheck.php
+ping.php
+
+# OS / editor junk
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
