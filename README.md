@@ -60,3 +60,14 @@ public/css/cv.css  public/js/cv.js      styling and interactions
 public/images/profile.jpg               photo
 public/files/Mohammad_Ghaith_CV.pdf     downloadable CV
 ```
+
+## GitHub Pages (static version)
+
+GitHub Pages can't run PHP, so a static copy of the site lives in `docs/`. After editing `config/cv.php` or the views, rebuild and push:
+
+```bash
+php build-static.php
+git add docs && git commit -m "Rebuild static site" && git push
+```
+
+On the static site the contact form opens the visitor's email app (mailto) instead of sending via SMTP.
